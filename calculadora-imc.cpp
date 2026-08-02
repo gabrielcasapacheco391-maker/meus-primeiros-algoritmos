@@ -83,7 +83,7 @@ cin >> atividade;
         break;
 
     default:
-          cout << "Nivel de atividade invalido! como vou saber em tchê" << endl;
+          cout << "Nivel de atividade invalido! como vou saber em tchÃª" << endl;
     return 1;
 }
 
@@ -166,7 +166,7 @@ else
     cout << "Variacao: " << variacaoPeso << " kg" << endl;
 
     cout << " IMC Anterior: " << IMCAnterior << endl;
-    cout <<"  Variação do IMC: " <<VariacaoIMC << endl;
+    cout <<"  VariaÃ§Ã£o do IMC: " <<VariacaoIMC << endl;
     if(IMCAnterior < 18.5)
     cout << "Classificacao: Abaixo do peso" << endl;
 else if(IMCAnterior < 25)
