@@ -1,35 +1,23 @@
-#include "Perfume.h"
-#include <iostream> 
-#include <iomanip>
-Perfume::Perfume(std::string n,std::string b, double p, bool i)
+#ifndef PERFUME_H
+#define PERFUME_H
+
+#include <string>
+class Perfume
 {
-    name=n;
-    brand =b;
-    price=p;
-    imported=i;
-}
+    public:
+        
+        Perfume(std::string n,std::string b, double p, bool i);
+       
+        virtual ~Perfume();
 
-Perfume::~Perfume()
-{
-    //dtor
-}
-bool Perfume::isImported() {
-    return imported;
-}
+    bool isImported();
+    void showInfo();
 
+    private:
+        std::string brand; 
+        std::string name; 
+        double price; 
+        bool imported;
+};
 
-void Perfume :: showInfo(){
-
-
-std::cout <<"The Dates of this perfume is: " <<std::endl;
-
-std::cout <<"the brand is " << brand << std::endl;
-std::cout <<"the name is " << name <<std::endl;
-std::cout <<" with the price R$  "<< std::fixed << std::setprecision(2) << price << std::endl;
-std::cout << "it´s " <<std::boolalpha << isImported() << "about the fragrance, if this is imported  " << std::endl;
-
-
-
-
-
-}
+#endif // PERFUME_H
